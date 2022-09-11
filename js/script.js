@@ -1,5 +1,5 @@
 
-
+// ハンバーガーメニュー
 $(function () {
     $('.hamburger').click(function() {
       $(this).toggleClass('active');
@@ -25,15 +25,7 @@ $(function () {
 // });
 
 
-
-// $(function(){
-// 	//クリックで動く
-// 	$('.ac-menu').click(function(){
-// 		$(this).toggleClass('active');
-// 		$(this).siblings('.ac-menu-list').slideToggle();
-// 	});
-// });
-
+// アコーディオンメニュー
 $(function () {
   $('.ac-menu').on('click', function () {
     $(this).toggleClass('active');

@@ -158,11 +158,12 @@ img {
 
 .ac-menu.active a:after{
   opacity: 0;
+  transition: .3s;
 }
 
 .ac-menu-list{
   display: none;
-  background-color: darkgray;
+  background-color: #f0f8ff;
   padding: 20px;
 }
 
