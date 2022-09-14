@@ -340,7 +340,7 @@ main{
 }
 
 
-/* menu */
+/* menu   special*/
 .menu-flex, .special-flex{
   display: flex;
 }
@@ -352,4 +352,71 @@ main{
 
 .menu-text, special-text{
   padding: 20px 10px;
+}
+
+/* recruite */
+#recruite{
+  background-color: #f0f8ff;
+}
+
+.recruite-wrapper{
+  display: flex;
+}
+
+.recruite-box{
+  width: 33.3%;
+  height: auto;
+  padding: 20px;
+}
+
+.recruite-text{
+  font-size: 14px;
+  color: #014099;
+  padding-top: 10px;
+}
+
+.recruite-box a:hover .recruite-text{
+  color: #a52a2a;
+}
+
+
+
+/* footer */
+.footer-wrapper{
+  background-color: #333333;
+  margin-top: 10px;
+}
+
+.footer-top{
+  padding-top: 10px;
+}
+
+.footer-top ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-box{
+  width: 215px;
+  height: 52px;
+  margin: 5px;
+  padding: 7px;
+  background-color: #000;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer-box a{
+  font-size: 10px;
+  color: #fff;
+}
+
+.footer-botom span{
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 24px;
 }
