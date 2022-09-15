@@ -21,30 +21,29 @@ img {
   vertical-align: top;
 }
 
+
 /* header */
 .header-wrapper{
   width: 100%;
-  height: 75px;
+  height: 10vh;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   padding: 0 20px 0 50px;
-  z-index: 100;
+  z-index: 90;
 }
 
 .header-title h1 a{
-  color: cornflowerblue;
+  color: #6495ED;
+  font-size: 20px;
 }
 
 /* hamburger */
 .hamburger {
   display: block;
-  position: fixed;
   position: relative;
-  top: 0px;
-  right: 0px;
   width: 50px;
   height: 50px;
   transition: all 0.5s;
@@ -100,7 +99,7 @@ img {
   transition: all 0.5s;
   overflow-y: auto;
   /* opacity: 0; */
-  z-index: 90;
+  z-index: 80;
 }
 
 .hamburger-nav.active {
@@ -112,7 +111,7 @@ img {
   display: none;
 }
 
-/* .mask.active {
+.mask.active {
   display: block;
   position: fixed;
   top: 0;
@@ -120,10 +119,10 @@ img {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  opacity: .5;
+  opacity: .8;
   transition: all .5s;
-  z-index: 80;
-} */
+  z-index: 70;
+}
 
 .hamburger-nav ul li{
   /* display: block; */
@@ -203,13 +202,14 @@ img {
 }
 
 .fab{
-    font-size: 21px;
+  font-size: 21px;
 }
 
 /* main */
+
 /* 共通CSS */
 main{
-  padding-top: 75px;
+  padding-top: 10vh;
 }
 
 .wrapper{
@@ -241,9 +241,9 @@ main{
 
 .about-text{
   font-size: 14px;
-  line-height: 50px;
+  line-height: 40px;
   letter-spacing: 0.1em;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .btn-more{
@@ -261,12 +261,29 @@ main{
   transition: .5s;
 }
 
+.fa-arrow-circle-o-right{
+  padding-left: 8px;
+}
+
+/* slider */
+.slider{
+  width: 95%;
+  height: 85vh;
+  margin: 0 auto;
+}
+
 
 /* concept */
 .concept-wrapper{
   width: 60%;
   margin: 0 auto;
   padding: 100px 50px 50px 50px;
+}
+
+.concept-title{
+  display: block;
+  font-size: 18px;
+  padding-bottom: 35px;
 }
 
 /* recommend  takeout*/
@@ -350,13 +367,17 @@ main{
   padding: 10px;
 }
 
-.menu-text, special-text{
+.menu-text, .special-text{
   padding: 20px 10px;
 }
 
 /* recruite */
 #recruite{
   background-color: #f0f8ff;
+}
+
+#recruite a{
+  color: #014099;
 }
 
 .recruite-wrapper{
@@ -371,7 +392,6 @@ main{
 
 .recruite-text{
   font-size: 14px;
-  color: #014099;
   padding-top: 10px;
 }
 
@@ -419,4 +439,163 @@ main{
   padding: 10px;
   font-size: 14px;
   line-height: 24px;
+}
+
+.sp-footer-menu{
+  display: none;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width:768px){
+
+  /* 共通パーツ */
+  body{
+    overflow-x: hidden;
+  }
+
+  .header-wrapper{
+    height: 70px;
+    padding: 0 20px 0 30px;
+  }
+
+  main{
+    padding-top: 70px;
+  }
+
+  .wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .about-text{
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  .btn-more{
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+
+  /* concept */
+  .concept-wrapper{
+    width: 95%;
+    margin: 0 auto;
+    padding: 100px 30px 50px 30px;
+  }
+
+  /* recommend  takeout*/
+  #recommend, #takeout{
+    flex-direction: column;
+  }
+
+  .recommend-img, .takeout-img{
+    width: 100%;
+  }
+
+  .recommend-text, .takeout-text{
+    width: 100%;
+    padding: 0;
+  }
+
+ /* news */
+  #news ul{
+    flex-direction: column;
+  }
+
+  #news ul li{
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .news-text{
+    padding: 9px 12px;
+  }
+
+
+  /* menu   special*/
+  .menu-flex, .special-flex{
+    flex-direction: column;
+  }
+
+  .menu-box, .special-box{
+    width: 100%;
+    padding: 10px;
+  }
+
+
+  /* recruite */
+  #recruite{
+    width: 90%;
+  }
+  .recruite-wrapper{
+    flex-direction: column;
+  }
+
+  .recruite-box{
+    width: 100%;
+  }
+
+  .recruite-text{
+    font-size: 13px;
+  }
+
+
+  /* footer */
+
+  .footer-top ul{
+    flex-direction: column;
+  }
+
+  .footer-box{
+    width: 100%;
+  }
+
+  .footer-botom span{
+    padding: 10px 10px 60px 10px;
+    font-size: 10px;
+  }
+
+  .sp-footer-menu{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    z-index: 60;
+  }
+
+  .sp-footer-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sp-footer-menu ul li{
+    width: 50%;
+  }
+
+  .sp-footer-menu ul li a{
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    padding: 18px;
+    height: 50px;
+  }
+
+  .sp-nav-tel{
+    background-color: #6495ED;
+  }
+
+  .sp-nav-web{
+    background-color: #a52a2a;
+  }
+
+
 }
