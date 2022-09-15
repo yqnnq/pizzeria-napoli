@@ -36,7 +36,7 @@ img {
 }
 
 .header-title h1 a{
-  color: #6495ED;
+  color: #014099;
   font-size: 20px;
 }
 
@@ -56,7 +56,7 @@ img {
   position: absolute;
   width: 18px;
   left: 16px;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #014099;
   transition: 0.5s ease-in-out;
 }
 
@@ -143,7 +143,7 @@ img {
   content: "";
   width: 10px;
   height: 1px;
-  background: #000;
+  background: #014099;
   /* display: block; */
   position: absolute;
   top: 50%;
