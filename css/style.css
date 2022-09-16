@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 body {
-  font-family:'Vollkorn', "Helvetica Neue", "Arial", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-family: "Hiragino Mincho Pro", "Arial", "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-size: 13px;
   font-style: normal;
+  letter-spacing: .1em;
 }
 
 li {
@@ -38,6 +38,8 @@ img {
 .header-title h1 a{
   color: #014099;
   font-size: 20px;
+  font-family: "Alegreya Sans SC";
+  letter-spacing: 0;
 }
 
 /* hamburger */
@@ -127,12 +129,12 @@ img {
 .hamburger-nav ul li{
   /* display: block; */
   padding: 0 20px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .hamburger-nav ul li a{
   display: block;
-  padding: 20px;
+  padding: 19px;
 }
 
 .ac-menu a{
@@ -221,12 +223,14 @@ main{
 .sec-title{
   font-size: 45px;
   font-weight: bold;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  font-family: 'Caveat';
+  padding-bottom: 30px;
+  /* margin-bottom: 15px; */
 }
 
 .sec-sub-title{
   font-size: 30px;
+  font-family: 'Caveat';
 }
 
 .sec-ja-title{
@@ -236,14 +240,12 @@ main{
 .sub-ja-title{
   font-size: 18px;
   line-height: 80px;
-  /* padding: 20px 0; */
 }
 
 .about-text{
   font-size: 14px;
-  line-height: 40px;
+  line-height: 35px;
   letter-spacing: 0.1em;
-  /* padding-bottom: 20px; */
 }
 
 .btn-more{
@@ -283,6 +285,8 @@ main{
 .concept-title{
   display: block;
   font-size: 18px;
+  font-weight: bold;
+  line-height: 35px;
   padding-bottom: 35px;
 }
 
