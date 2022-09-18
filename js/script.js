@@ -33,3 +33,20 @@ $(function () {
   });
 });
 
+
+// 文字背景のアニメーション
+function TextAnimation() {
+  $('.text-wrapper').each(function () {
+    var elemPos = $(this).offset().top - 30;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass('active');
+    } else {
+      $(this).removeClass('active');
+    }
+  });
+}
+  $(window).scroll(function (){
+    TextAnimation();
+  });
