@@ -18,7 +18,7 @@ a {
 
 img {
   max-width: 100%;
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 
 
@@ -100,12 +100,10 @@ img {
   padding: 90px 0;
   transition: all 0.5s;
   overflow-y: auto;
-  /* opacity: 0; */
   z-index: 80;
 }
 
 .hamburger-nav.active {
-  /* opacity: 100; */
   right: 0;
 }
 
@@ -267,6 +265,7 @@ main{
   font-weight: bold;
   font-family: 'Caveat';
   z-index: 2;
+  line-height: 45px;
 }
 
 .sec-sub-title{
@@ -280,12 +279,12 @@ main{
 
 .sub-ja-title{
   font-size: 18px;
-  line-height: 80px;
+  line-height: 70px;
 }
 
 .about-text{
   font-size: 14px;
-  line-height: 35px;
+  line-height: 33px;
   letter-spacing: 0.1em;
 }
 
@@ -327,7 +326,7 @@ main{
   display: block;
   font-size: 18px;
   font-weight: bold;
-  line-height: 35px;
+  line-height: 33px;
   padding-bottom: 35px;
 }
 
@@ -384,7 +383,7 @@ main{
 
 .news-text{
   width: 60%;
-  padding: 12px 16px;
+  padding: 3% 4%;
 }
 
 .news-text time{
@@ -482,9 +481,9 @@ main{
   display: block;
   text-align: center;
   color: #fff;
-  padding: 10px;
-  font-size: 14px;
-  line-height: 24px;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .sp-footer-menu{
