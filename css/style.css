@@ -23,19 +23,24 @@ img {
 
 
 /* header */
-.header-wrapper{
+header{
   width: 100%;
   height: 10vh;
   background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   padding: 0 20px 0 50px;
   z-index: 90;
 }
 
+.header-wrapper{
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-title h1 a{
+  display: block;
   color: #014099;
   font-size: 20px;
   font-family: "Alegreya Sans SC";
@@ -372,6 +377,12 @@ main{
 .news-box{
   display: flex;
   align-items: center;
+  color: #014099;
+}
+
+.news-box:hover{
+  color: #a52a2a;
+  transition: 1s;
 }
 
 .news-img{
@@ -388,17 +399,11 @@ main{
 
 .news-text time{
   font-size: 10px;
-  color: #014099;
 }
 
 .news-text p{
   font-size: 13px;
   line-height: 24px;
-  color: #014099;
-}
-
-.news-box:hover time, .news-box:hover p{
-  color: #a52a2a;
 }
 
 
@@ -442,6 +447,7 @@ main{
 
 .recruite-box a:hover .recruite-text{
   color: #a52a2a;
+  transition: 1s;
 }
 
 
@@ -466,15 +472,16 @@ main{
   width: 215px;
   height: 52px;
   margin: 5px;
-  padding: 7px;
   background-color: #000;
-  text-align: center;
-  line-height: 1.5;
 }
 
 .footer-box a{
-  font-size: 10px;
+  display: block;
+  height: 52px;
+  padding: 10px;
   color: #fff;
+  font-size: 10px;
+  text-align: center;
 }
 
 .footer-botom span{
@@ -499,9 +506,13 @@ main{
     overflow-x: hidden;
   }
 
-  .header-wrapper{
+  header{
     height: 70px;
     padding: 0 20px 0 30px;
+  }
+
+  .header-wrapper{
+    height: 70px;
   }
 
   main{
