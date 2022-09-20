@@ -34,19 +34,34 @@ $(function () {
 });
 
 
+// // 文字背景のアニメーション
+// function TextAnimation() {
+//   $('.text-wrapper').each(function () {
+//     var elemPos = $(this).offset().top - 30;
+//     var scroll = $(window).scrollTop();
+//     var windowHeight = $(window).height();
+//     if (scroll >= elemPos - windowHeight) {
+//       $(this).addClass('active');
+//     } else {
+//       $(this).removeClass('active');
+//     }
+//   });
+// }
+//   $(window).scroll(function (){
+//     TextAnimation();
+//   });
+// };
+
 // 文字背景のアニメーション
-function TextAnimation() {
-  $('.text-wrapper').each(function () {
-    var elemPos = $(this).offset().top - 30;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight) {
+$(window).on('scroll',function(){
+  $(".sec-title").each(function(){
+    let position = $(this).offset().top;
+    let scroll = $(window).scrollTop();
+    let windowHeight = $(window).height();
+    if (scroll > position - windowHeight + 100){
       $(this).addClass('active');
     } else {
-      $(this).removeClass('active');
+    $(this).removeClass('active');
     }
   });
-}
-  $(window).scroll(function (){
-    TextAnimation();
-  });
+});
