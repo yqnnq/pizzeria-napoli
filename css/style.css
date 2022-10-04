@@ -999,13 +999,13 @@ main{
     padding: 30px;
   }
 
-  .rec-img{
+  /* .rec-img{
     padding: 20px;
   }
 
   .rec-text{
     padding: 20px;
-  }
+  } */
 
   .btn-pc{
     display: none;
