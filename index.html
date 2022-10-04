@@ -23,7 +23,45 @@
 
 <body>
   <header>
-    <div class="header-wrapper">
+
+  <div class="header-wrapper">
+    <div class="header-title">
+      <h1><a href="index.html">Restaurant</a></h1>
+    </div>
+    <nav class="g-navi">
+      <ul>
+        <li class="ac-menu"><a href="#">MENU</a>
+          <ul class="ac-menu-list">
+            <li><a href="./html/lunch.html">LUNCH</a></li>
+            <li><a href="./html/dinner.html">DINNER</a></li>
+            <li><a href="">DRINK <i class="fa fa-file-o "></i></a></li>
+            <li><a href="">PARTY</a></li>
+          </ul>
+        </li>
+        <li><a href="./html/takeout.html">TAKE OUT</a></li>
+        <li><a href="">ONLINE SHOP</a></li>
+        <li><a href="./html/wedding.html">WEDDING</a></li>
+        <li><a href="#">MESSAGE</a></li>
+        <li class="ac-menu"><a href="#">ABOUT</a>
+          <ul class="ac-menu-list">
+            <li><a href="">ACCESS</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </li>
+        <li class="nav-right">
+          <div class="nav-web"><a href="">WEB RESERVE</a></div>
+          <div class="nav-tel"><a href="tel:0000000000">TEL</a>
+          </div>
+        </li>
+      </ul>
+      <div class="mask"></div>
+    </nav>
+  </div>
+
+  <!-- スマホレイアウト -->
+  <div class="sp">
+    <div class="header-wrapper-sp">
       <div class="header-title">
         <h1><a href="index.html">Restaurant</a></h1>
       </div>
@@ -38,31 +76,25 @@
     <nav class="hamburger-nav">
       <ul>
         <li><a href="index.html">HOME</a></li>
-        <li>
-          <div class="ac-menu"><a href="#">MENU</a></div>
-          <div class="ac-menu-list">
-            <dl>
-              <dt><a href="">LUNCH</a></dt>
-              <dt><a href="">DINNER</a></dt>
-              <dt><a href="">DRINK</a></dt>
-              <dt><a href="">PARTY</a></dt>
-            </dl>
-          </div>
+        <li class="ac-menu"><a href="#">MENU</a>
+          <ul class="ac-menu-list">
+            <li><a href="./html/lunch.html">LUNCH</a></li>
+            <li><a href="./html/dinner.html">DINNER</a></li>
+            <li><a href="">DRINK <i class="fa fa-file-o "></i></a></li>
+            <li><a href="">PARTY</a></li>
+          </ul>
         </li>
-        <li><a href="">TAKE OUT</a></li>
+        <li><a href="./html/takeout.html">TAKE OUT</a></li>
         <li><a href="">ONLINE SHOP</a></li>
-        <li><a href="">WEDDING</a></li>
+        <li><a href="./html/wedding.html">WEDDING</a></li>
         <li><a href="">ATMOS</a></li>
-        <li><a href="">MESSAGE</a></li>
-        <li>
-          <div class="ac-menu"><a href="#">ABOUT</a></div>
-          <div class="ac-menu-list">
-            <dl>
-              <dt><a href="">ACCESS</a></dt>
-              <dt><a href="">NEWS</a></dt>
-              <dt><a href="">CONTACT</a></dt>
-            </dl>
-          </div>
+        <li><a href="#">MESSAGE</a></li>
+        <li class="ac-menu"><a href="#">ABOUT</a>
+          <ul class="ac-menu-list">
+            <li><a href="">ACCESS</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
         </li>
         <li class="nav-web"><a href="">WEB RESERVE（予約）</a></li>
         <li class="nav-tel"><a href="tel:0000000000">TEL：XX-XXXX-XXXX</a>
@@ -72,6 +104,7 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <main>
@@ -82,7 +115,7 @@
     <!-- </section> -->
 
     <section id="concept" class="concept-wrapper">
-      <div class="concept-text">
+      <div class="concept-text fadeUpTrigger">
         <div class="text-wrapper">
           <h2 class="sec-title">Straordi`nario</h2>
         </div>
@@ -98,13 +131,13 @@
       <div class="recommend-img">
         <img src="./image/image01.jpg" alt="">
       </div>
-      <div class="recommend-text">
+      <div class="recommend-text fadeUpTrigger">
         <div class="text-wrapper">
           <h2 class="sec-title">Recommend</h2>
         </div>
         <span class="sec-ja-title">レコメンドメニュー</span>
         <p class="about-text">素材の「旬」を見逃さず、一番いい時期の素材を活かしたレコメンドメニュー。<br>さらにシェフのこだわりで変化するお料理もラインナップ！</p>
-        <a class="btn-more" href="#">More<i class="fa fa-arrow-circle-o-right"></i></a>
+        <a class="btn-more" href="./html/dinner.html#cont-recommend">More<i class="fa fa-arrow-circle-o-right"></i></a>
       </div>
     </section>
 
@@ -153,7 +186,7 @@
       <div class="text-wrapper">
         <h2 class="sec-title">Menu</h2>
       </div>
-      <div class="menu-flex">
+      <div class="menu-flex fadeUpTrigger">
         <div class="menu-box">
           <div class="menu-img"><img src="./image/image02.jpg" alt=""></div>
           <div class="menu-text">
@@ -162,7 +195,7 @@
             <p class="about-text">シーンを選ばず気軽にご利用できるお料理の数々。お手頃価格なセットメニューから自慢のレコメンドメニューも多数ご用意しております。</p>
 
           </div>
-          <a href="" class="btn-more">More<i class="fa fa-arrow-circle-o-right"></i></a>
+          <a href="./html/lunch.html" class="btn-more">More<i class="fa fa-arrow-circle-o-right"></i></a>
         </div>
         <div class="menu-box">
           <div class="menu-img"><img src="./image/image03.jpg" alt=""></div>
@@ -171,7 +204,7 @@
             <span class="sub-ja-title">ディナーメニュー</span>
             <p class="about-text">昼間とは全く違う表情を見せる夜の顔。ラフなイルミネーションが映えるガーデンテラスを眺めながら、シェフ厳選の食材を使った一皿をご用意しております。</p>
           </div>
-          <a href="" class="btn-more">More<i class="fa fa-arrow-circle-o-right"></i></a>
+          <a href="./html/dinner.html" class="btn-more">More<i class="fa fa-arrow-circle-o-right"></i></a>
         </div>
       </div>
     </section>
@@ -180,13 +213,13 @@
       <div class="takeout-img">
         <img src="./image/image04.jpg" alt="">
       </div>
-      <div class="takeout-text">
+      <div class="takeout-text fadeUpTrigger">
         <div class="text-wrapper">
           <h2 class="sec-title">Take Out</h2>
         </div>
         <span class="sec-ja-title">テイクアウトメニュー</span>
         <p class="about-text">自慢の料理をご自宅でも。前菜からパスタ、肉料理、薪窯で焼き上げたピッツァなどおうち時間を楽しく演出できる、そんな料理を多数ご用意しております。</p>
-        <a class="btn-more" href="#">More<i class="fa fa-arrow-circle-o-right"></i></a>
+        <a class="btn-more" href="./html/takeout.html">More<i class="fa fa-arrow-circle-o-right"></i></a>
       </div>
     </section>
 
@@ -194,7 +227,7 @@
       <div class="text-wrapper">
         <h2 class="sec-title">Special</h2>
       </div>
-      <div class="special-flex">
+      <div class="special-flex fadeUpTrigger">
       <div class="special-box">
         <div class="special-img"><img src="./image/image05.jpg" alt=""></div>
         <div class="special-text">
@@ -202,7 +235,7 @@
           <span class="sub-ja-title">ウェディング</span>
           <p class="about-text">一生に一度の大切な日。緑溢れるガーデンテラスでの挙式・披露宴は勿論、着席スタイルも立食スタイルも…。お二人が叶えたい形を専属ウェディングプランナーがサポート。お二人にとっての「最幸な一日」を精一杯お手伝いさせていただきます。</p>
         </div>
-        <a href="" class="btn-more">More<i class="fa fa-arrow-circle-o-right"></i></a>
+        <a href="./html/wedding.html" class="btn-more">More<i class="fa fa-arrow-circle-o-right"></i></a>
       </div>
       <div class="special-box">
         <div class="special-img"><img src="./image/image06.jpg" alt=""></div>
@@ -220,7 +253,7 @@
       <div class="text-wrapper">
         <h2 class="sec-title">Recruite</h2>
       </div>
-      <div class="recruite-wrapper">
+      <div class="recruite-wrapper fadeUpTrigger">
         <div class="recruite-box">
           <a href="">
             <img src="./image/image07.jpg" alt="">
