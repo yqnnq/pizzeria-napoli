@@ -7,22 +7,16 @@ $(function () {
         if ($(this).hasClass('active')) {
           $('.hamburger-nav').addClass('active');
           $('.mask').addClass('active');
+          $('body').addClass('fixed');
         } else {
           $('.hamburger-nav').removeClass('active');
           $('.mask').removeClass('active');
+          $('body').removeClass('fixed');
         }
 
     });
 });
-// //メニュー内を閉じておく
-// $(function() {
-//     $('.hamburger-nav a[href]').click(function() {
-//         $('.hamburger-nav').removeClass('active');
-//       $('.hamburger').removeClass('active');
-//       $('.mask').removeClass('active');
 
-//     });
-// });
 
 // アコーディオンメニュー
 
@@ -79,6 +73,7 @@ $(window).on('scroll',function(){
 //   });
 // });
 
+
 // 画像のアニメーション
 $(window).on('scroll',function(){
   $(".fadeUpTrigger").each(function(){
@@ -117,4 +112,13 @@ $(window).on('scroll',function(){
     // $(this).removeClass('fadeRight');
     }
   });
+});
+
+
+// メッセージページのスライダー
+$(".slide-items").slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows :false,
+  infinite: true,
 });
