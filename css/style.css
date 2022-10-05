@@ -97,7 +97,6 @@ header{
   width: 10px;
   height: 1px;
   background: #014099;
-  /* display: block; */
   position: absolute;
   top: 50%;
   right: 20px;
@@ -658,6 +657,10 @@ main{
     position: static;
   }
 
+  .ac-menu>a:before, .ac-menu>a:after{
+    right: 100px;
+  }
+
   .ac-menu a.active:after{
     opacity: 0;
     transition: .3s;
@@ -913,6 +916,13 @@ main{
   background-color: #f0f8ff;
 }
 
+.wedding-about-text{
+  font-size: 14px;
+  line-height: 33px;
+  letter-spacing: 0.1em;
+  padding: 0 10px 15px 10px;
+}
+
 .wedding-plan-top{
   width: 60%;
   margin: 0 auto;
@@ -950,6 +960,94 @@ main{
   flex-direction: row-reverse;
 }
 
+/* message */
+.slider2{
+  width: 90%;
+  height: 470px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-text{
+  position: absolute;
+  top: 20%;
+  left: 38%;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 105px 0;
+}
+
+.slider-text span{
+  display: inline-block;
+  font-size: 30px;
+  /* font-family: 'Kiwi Maru'; */
+}
+
+/* .s1, .s2 {
+display:inline-block;
+overflow:hidden;
+white-space:nowrap;
+width:0%;
+} */
+
+/* .s1 {
+animation:s1 3s infinite;
+}
+@keyframes s1 {
+      from { width:0em; }
+      33% { width: 6em; }
+      to { width:100%; }
+}
+.s2 {
+animation:s2 4s infinite;
+}
+@keyframes s2 {
+      0% { width:0em; }
+      33% { width:0em; }
+      66% { width:8em; }
+      to { width:100%; }
+} */
+
+
+
+.slide-items {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(10px 10px 7px #CCC);
+}
+
+.slide-items img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#cont-message{
+  padding: 100px 50px 50px 50px;
+  text-align: center;
+}
+
+#message-area{
+  padding-top: 50px;
+}
+
+.message-box{
+  display: flex;
+  align-items: center;
+  padding: 3%;
+}
+
+.message-title{
+  /* font-family: 'Kiwi Maru'; */
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 50px;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
 
 
 
@@ -1009,6 +1107,56 @@ main{
 
   .btn-pc{
     display: none;
+  }
+
+  .wedding-text{
+    padding-bottom: 50px;
+  }
+
+  .wedding-about-text{
+  font-size: 13px;
+}
+
+  /* message */
+  .slider2{
+    width: 95%;
+  }
+
+  .slider-text{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    padding: 50px 0;
+  }
+
+  .slider-text span{
+    display: inline-block;
+    font-size: 17px;
+    /* font-family: 'Kiwi Maru'; */
+  }
+
+  #cont-message{
+    padding: 100px 30px 50px 30px;
+    text-align: left;
+  }
+
+  #message-area{
+    padding-top: 30px;
+  }
+
+  .message-box{
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+  }
+
+  .message-title{
+    /* font-family: 'Kiwi Maru'; */
+    font-size: 18px;
+    line-height: 35px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 
 }
