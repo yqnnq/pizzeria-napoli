@@ -159,7 +159,7 @@ particlesJS("particles-js", {
     },
     "size":{
       "value":7.011985930952697,
-      "random":true,//サイズをランダムに
+      "random":true,
       "anim":{
         "enable":false,
         "speed":4,
